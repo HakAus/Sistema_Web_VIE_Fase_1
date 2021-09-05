@@ -20,7 +20,8 @@ Public Module BundleConfig
 
         bundles.Add(New StyleBundle("~/Content/css").Include(
                   "~/Content/bootstrap.css",
-                  "~/Content/site.css"))
+                  "~/Content/site.css",
+                  "~/lib/font-awesome/css/all.css"))
     End Sub
 End Module
 

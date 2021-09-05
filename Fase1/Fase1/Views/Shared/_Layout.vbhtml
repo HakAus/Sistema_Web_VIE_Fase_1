@@ -13,19 +13,26 @@
         <div class="vertical-nav bg-white" id="sidebar">
             <div class="mb-4 text-center">
                 <h1 class="white strong">TEC</h1>
-            </div>
-
+            </div> 
 
             <div class="mt-5 ">
-                <ul class="nav flex-column bg-white mb-0 "> 
-                    <li class="navbar-li ">@Html.ActionLink("Ficha del Investigador", "Index", "Home")</li> 
+                <ul class="nav flex-column bg-white mb-0 ">
+                    <span><i class="far fa-address-card fa-2x white"></i>
+                    <li class="navbar-li ">@Html.ActionLink("Ficha del Investigador", "Index", "Home")</li></span>
 
-                    <li class="navbar-li">@Html.ActionLink("Convocatorias", "About", "Home")</li>
-                    <li class="navbar-li">@Html.ActionLink("Formulación de Propuestas", "Contact", "Home")</li>
-                    <li class="navbar-li">@Html.ActionLink("Seguimiento de Proyectos", "Index", "Home")</li>
-                    <li class="navbar-li">@Html.ActionLink("Evaluaciones", "About", "Home")</li>
+                    <span><i class="far fa-address-card fa-2x white"></i>
+                    <li class="navbar-li">@Html.ActionLink("Convocatorias", "About", "Home")</li></span>
+
+                    <span><i class="far fa-address-card fa-2x white"></i>
+                    <li class="navbar-li">@Html.ActionLink("Formulación de Propuestas", "Contact", "Home")</li></span>
+
+                    <span><i class="far fa-address-card fa-2x white"></i>
+                    <li class="navbar-li">@Html.ActionLink("Seguimiento de Proyectos", "Index", "Home")</li></span>
+
+                    <span><i class="far fa-address-card fa-2x white"></i>
+                    <li class="navbar-li">@Html.ActionLink("Evaluaciones", "About", "Home")</li></span>
                 </ul>
-            </div> 
+            </div>
 
         </div>
 

@@ -9,35 +9,40 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de la aplicación", "Index", "Home", New With { .area = "" }, New With { .class = "navbar-brand" })
+    <div class="col-sm-2">
+        <div class="vertical-nav bg-white" id="sidebar">
+            <div class="mb-4 text-center">
+                <h1 class="white strong">TEC</h1>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+
+
+            <div class="mt-5 ">
+                <ul class="nav flex-column bg-white mb-0 "> 
+                    <li class="navbar-li ">@Html.ActionLink("Ficha del Investigador", "Index", "Home")</li> 
+
+                    <li class="navbar-li">@Html.ActionLink("Convocatorias", "About", "Home")</li>
+                    <li class="navbar-li">@Html.ActionLink("Formulación de Propuestas", "Contact", "Home")</li>
+                    <li class="navbar-li">@Html.ActionLink("Seguimiento de Proyectos", "Index", "Home")</li>
+                    <li class="navbar-li">@Html.ActionLink("Evaluaciones", "About", "Home")</li>
                 </ul>
-            </div>
+            </div> 
+
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
+
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required:=False)
+    <div class="col-sm-10">
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            </footer>
+        </div>
+    </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required:=False)
 </body>
 </html>

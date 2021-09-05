@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: "Helvetica Neue", Helvetica;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +23,48 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.vertical-nav {
+    min-width: 10%;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+    background-color: #002855;
+    font-family: "Helvetica Neue", Helvetica;
+}
+
+.page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+}
+
+/* for toggle behavior */
+ 
+ 
+
+.white {
+    color: #fff !important;
+}
+
+.navbar-li {
+    color: #fff !important;
+    margin-top: 25px;
+}
+
+.mt-5{
+    margin-top: 45px;
+}
+
+a {
+    color: #fff !important;
+}
+
+h1 {
+    font-size: 56px;
+}
+ 
